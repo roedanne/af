@@ -10,10 +10,12 @@ async function startServer() {
   const app = express();
   await loaders.default({ expressApp: app });
 
-  app.listen(config.port, () => {
+  const port = process.env.PORT || config.port;
+
+  app.listen(port, () => {
       logger.info(`
         ################################################
-        #  Server listening on port: ${config.port}    #
+        #  Server listening on port: ${port}    #
         ################################################
       `);
     }).on('error', (err) => {
