@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Arbetsprov",
+		"_postman_id": "0aae6da2-14b8-d35c-45d8-3d25f836a53d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Inventory",
+			"request": {
+				"url": "http://localhost:8080/api/articles",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"inventory\": [\n    {\n      \"art_id\": 1,\n      \"name\": \"leg\",\n      \"stock\": 15\n    },\n    {\n      \"art_id\": 2,\n      \"name\": \"screw\",\n      \"stock\": 17\n    },\n    {\n      \"art_id\": 3,\n      \"name\": \"seat\",\n      \"stock\": 1\n    },\n    {\n      \"art_id\": 4,\n      \"name\": \"table top\",\n      \"stock\": 4\n    }\n  ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post Products",
+			"request": {
+				"url": "http://localhost:8080/api/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"products\": [\n    {\n    \t\"prod_id\" : 1,\n      \"name\": \"Dining Chair\",\n      \"contain_articles\": [\n        {\n          \"art_id\": 1,\n          \"amount_of\": 4\n        },\n        {\n          \"art_id\": 2,\n          \"amount_of\": 8\n        },\n        {\n          \"art_id\": 3,\n          \"amount_of\": 1\n        }\n      ],\n      \"price\" : 800\n    },\n    {\n    \t\"prod_id\": 2,\n      \"name\": \"Dining Table\",\n      \"contain_articles\": [\n        {\n          \"art_id\": 1,\n          \"amount_of\": 4\n        },\n        {\n          \"art_id\": 2,\n          \"amount_of\": 8\n        },\n        {\n          \"art_id\": 4,\n          \"amount_of\": 1\n        }\n      ],\n      \"price\" : 2600\n    }\n  ]\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
