@@ -4,12 +4,7 @@
   "description": "AF Demo",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && cd client && npm run build",
-    "start": "tsc && node .",
-    "test": "jest",
-    "watch": "tsc -w",
-    "dev": "cd client && npm run build && cd .. && tsc -w & nodemon dist/",
-    "lint": "eslint . --ext .ts"
+    "start": "tsc && node dist/index.js",
   },
   "keywords": [],
   "author": "Daniel Johnsson",
