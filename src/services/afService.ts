@@ -12,7 +12,7 @@ import logger from '../logger';
 export default class AfService {
 
   constructor() {
-    logger.info('AF initialized')
+//    logger.info('AF initialized')
   }
 
   // TODO should have been named better

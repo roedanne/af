@@ -1,0 +1,35 @@
+CREATE TABLE `af-dev`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `location` GEOMETRY NOT NULL SRID 4326,
+  SPATIAL INDEX( `location`),
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `af-dev`.`categories` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(45) NULL,
+    `description` VARCHAR(500) NULL,
+    PRIMARY KEY (`id`));
+
+CREATE TABLE `af-dev`.`tasks` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(45) NULL,
+    `description` VARCHAR(500) NULL,
+    `category` INT NOT NULL,
+    `owner` INT NOT NULL,
+    `state` INT NOT NULL,
+    `assignee` INT NULL,
+    `location` GEOMETRY NOT NULL SRID 4326,
+    SPATIAL INDEX( `location`),
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (category) REFERENCES categories(id),
+    FOREIGN KEY (owner) REFERENCES users(id),
+    FOREIGN KEY (assignee) REFERENCES users(id));
+
+CREATE TABLE `af-dev`.`availability` (
+        `id` INT NOT NULL AUTO_INCREMENT,
+        `user` INT NOT NULL,
+        `start_time` INT NOT NULL,
+        `end_time` INT NOT NULL,
+        PRIMARY KEY (`id`),
+        FOREIGN KEY (user) REFERENCES users(id));

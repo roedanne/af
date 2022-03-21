@@ -1,11 +1,11 @@
 //const winston = require('winston')
 import * as winston from 'winston';
-import dailyRotateFile from 'winston-daily-rotate-file';
+//import dailyRotateFile from 'winston-daily-rotate-file';
 
 const colorizer = winston.format.colorize();
 
 // Setup a console log and a file log
-
+/*
 const rollingFileAppender = new dailyRotateFile({
   filename: 'logs/log-%DATE%.log',
   datePattern: 'YYYY-MM-DD-HH',
@@ -14,7 +14,7 @@ const rollingFileAppender = new dailyRotateFile({
   maxFiles: '14d',
   level: 'warn',
 });
-
+*/
 const consoleAppender = new winston.transports.Console({
   level: 'debug',
   format: winston.format.combine(
@@ -37,7 +37,7 @@ const consoleAppender = new winston.transports.Console({
 
 export default winston.createLogger({
   transports: [
-    rollingFileAppender,
+    //rollingFileAppender,
     consoleAppender
   ]
 });

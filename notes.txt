@@ -1,0 +1,141 @@
+<body >
+<svg width="350" height="350">
+  <!-- a width, height ? ? direction,   -->
+<!--
+  <path d="M100,100 L100,50   A50,50 0 1,1 50,100    z"
+    style="fill:red;fill-opacity: 1;stroke:black;stroke-width: 1" />
+  -->
+
+  <path d="M100,100 L100,50   A50,50 0 0,1 150,100    z"
+    style="fill:blue;fill-opacity: 1;stroke:black;stroke-width: 1"/>
+
+   <path d="M100,100 L100,50   A50,50 0 0,0 50,100    z"
+    style="fill:green;fill-opacity: 1;stroke:black;stroke-width: 1" />
+
+   <path d="M100,100 L100,150   A50,50 0 0,1 50,100    z"
+    style="fill:orange;fill-opacity: 1;stroke:black;stroke-width: 1" />
+
+  <path d="M100,100 L100,150   A50,50 0 0,0 150,100    z"
+    style="fill:yellow;fill-opacity: 1;stroke:black;stroke-width: 1" />
+
+</svg>
+</body>
+
+
+<body >
+<svg width="200" height="200">
+  <!-- a width, height ? ? direction,   -->
+<!--
+  <path d="M100,100 L100,50   A50,50 0 1,1 50,100    z"
+    style="fill:red;fill-opacity: 1;stroke:black;stroke-width: 1" />
+  -->
+
+  <path d="M100,100 L100,50   A50,50 0 0,1 150,100    z"
+    style="fill:#FF6363;fill-opacity: 1"/>
+
+  <!--
+   <path d="M100,100 L100,50   A50,50 0 0,0 50,100    z"
+    style="fill:#FFAB76;fill-opacity: 1" />
+  -->
+
+   <path d="M100,100 100,50 50,50 50,100  z"
+    style="fill:#BAFFB4;fill-opacity: 1" />
+
+   <path d="M100,100 100,50  50,100   z"
+    style="fill:#FFAB76;fill-opacity: 1" />
+
+
+   <path d="M100,100 L100,150   A50,50 0 0,1 50,100    z"
+    style="fill:#FFFDA2;fill-opacity: 1" />
+
+  <path d="M100,100 L100,150   A50,50 0 0,0 150,100    z"
+    style="fill:#BAFFB4;fill-opacity: 1;" />
+
+</svg>
+<div class="label">ALLA JOBB</div>
+</body>
+
+
+body {
+  background:#111;
+}
+
+.label {
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 58px;
+  width: 100px;
+  text-align: center;
+  background-color: #111;
+  font-family: helvetica;
+}
+
+
+
+
+<body style="background-color: white">
+<svg width="200" height="200">
+
+
+  <!-- Top right -->
+  <!--
+
+    <path d="M100,100 L100,50   A50,50 0 0,1 150,100    z"
+      style="fill:#FF6363;fill-opacity: 1"/>
+  -->
+
+  <!-- Top left square -->
+  <!--
+  <path d="M100,100 100,50 50,50 50,100  z"
+    style="fill:#BAFFB4;fill-opacity: 1" />
+  -->
+
+  <!-- Bottom left -->
+  <!-- <path d="M100,100 L100,150   A50,50 0 0,1 50,100    z"
+    style="fill:#FFFDA2;fill-opacity: 1" />
+  -->
+
+  <!-- Bottom right -->
+  <!--
+  <path d="M100,100 L100,150   A50,50 0 0,0 150,100    z"
+    style="fill:#BAFFB4;fill-opacity: 1;" />
+  -->
+
+  <!-- Top left -->
+  <!--
+  <path d="M100,100 100,50  50,100   z"
+    style="fill:#FFAB76;fill-opacity: 1" />
+  -->
+
+   <!-- Bottom right -->
+
+  <!--<path d="M100,100 L100,150   A50,50 0 0,0 150,100    z"
+    style="fill:white;fill-opacity: 1;" />
+  -->
+
+  <path d="M100,100 L100,150   A50,50 0 0,0 150,100    z"
+    style="fill:#B8FFF9;fill-opacity: 1;" />
+
+   <path d="M100,50  L150,50 150,100    "
+    style="fill:#B8FFF9;fill-opacity: 1;" />
+
+  <path d="M100,50 150,50  150,100 100,100  z"
+    style="fill:#B8FFF9;fill-opacity: 1" />
+
+   <path d="M100,150  A50,50 0 0,0 150,100    "
+    style="fill:#B8FFF9;fill-opacity: 1;stroke:#42C2FF;stroke-width:10px" />
+
+  <path d="M97,50  L150,50 150,100    "
+    style="fill:#B8FFF9;fill-opacity: 1;stroke:#42C2FF;stroke-width:10px" />
+
+
+  <!-- A:et -->
+  <path d="M100,47  L50,150 100,150    "
+    style="fill:#85F4FF;fill-opacity: 1;stroke:#42C2FF;stroke-width:10px" />
+
+
+
+</svg>
+<div class="label"><span class="alla">ALLA</span> <span class="jobb">JOBB</span></div>
+</body>

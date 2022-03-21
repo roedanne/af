@@ -4,6 +4,7 @@ import config from './config';
 
 import logger from './logger';
 
+// dev4af!
 // Very basic index file. Let the loaders initiate stuff and open the connection
 async function startServer() {
 

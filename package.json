@@ -4,7 +4,8 @@
   "description": "AF Demo",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index.js"
+    "build": "tsc && cd client && npm run build",
+    "start": "node ."
   },
   "keywords": [],
   "author": "Daniel Johnsson",
